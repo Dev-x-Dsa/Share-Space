@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <style>
+        #myIframe {
+            height: 300px;
+            width: 100%;
+            border: 2px solid #999;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #myButton {
+            margin: 20px;
+        }
+
+        .col1 {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="col1">
+            <iframe width="560" height="315" id="myIframe" src="https://www.youtube.com/embed/mG3KLugbOdc?si=C4m0eQEfn6a8Yk-m"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="col1">
+            <button id="myButton" onclick="triggerClickInsideIframe()">Button outside</button>
+        </div>
+    </div>
+    <script>
+    function triggerClickInsideIframe() {
+        console.log(document.getElementById("myIframe").contentWindow);
+    }
+    </script>
+</body>
+
+</html>
