@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className=' text-red-700 bg-green-500'>
+    <div className=''>
       <Header/>
       <MainComponent/>
       <Footer/>

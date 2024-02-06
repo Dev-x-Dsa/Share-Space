@@ -1,6 +1,8 @@
 const MainComponent=()=>{
-    return (<div>
-        Main
+    return (<div className="bg-red-700">
+        <p>
+            Main Component
+        </p>
     </div>)
 }
 
