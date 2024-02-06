@@ -1,3 +1,14 @@
+:root {
+    --color-white: #fefefe;
+    --color-primary: #5c6ac4;
+    --color-slate: #ced1d1;
+    --color-slater: #adadad;
+    --color-dark: #888b8e;
+    --color-blue: #1a73e8;
+    --color-secondary: #ecc94b;
+    /* ... */
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

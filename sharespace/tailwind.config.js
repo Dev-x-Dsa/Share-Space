@@ -4,7 +4,20 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        google: [''],
+      },
+    },
+    colors: {
+      white: 'var(--color-white)',
+      blue: 'var(--color-blue)',
+      slate: 'var(--color-slate)',
+      slater: 'var(--color-slater)',
+      dark: 'var(--color-dark)',
+      primary: 'var(--color-primary)',
+      secondary: 'var(--color-secondary)',
+    }
   },
   plugins: [],
 }
