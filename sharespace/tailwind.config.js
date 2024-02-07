@@ -17,6 +17,13 @@ module.exports = {
       dark: 'var(--color-dark)',
       primary: 'var(--color-primary)',
       secondary: 'var(--color-secondary)',
+      bluehero: 'var(--color-bluehero)',
+      goldhero: 'var(--color-goldhero)',
+      greenhero: 'var(--color-greenhero)',
+      darkerhero: 'var(--color-darkerhero)',
+      darkhero: 'var(--color-darkhero)',
+      darktext: 'var(--color-darktext)',
+      orange: 'var(--color-orange)',
     }
   },
   plugins: [],
