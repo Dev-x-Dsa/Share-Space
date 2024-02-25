@@ -1,5 +1,5 @@
 const Footer=()=>{
-    return (<div className=" bg-blue-700">
+    return (<div className="bg-[#000000]  text-[#d6d6d6]">
         Footer
     </div>)
 }
