@@ -1,7 +1,33 @@
+import { useState } from "react";
 import logo from "../assets/logo.png"
+import { useEffect } from "react";
+
+
+    
+
 const Header = () => {
+    const [prevScrollpos, setPrevScrollpos] = useState(window.pageYOffset);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        const currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("hide-header").style.top = "0";
+        } else {
+          document.getElementById("hide-header").style.top = "-80px"; // adjust this value to the height of your header
+        }
+        setPrevScrollpos(currentScrollPos);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, [prevScrollpos]);
+
     return (
-        <div className="text-xl py-2 text-[0.95rem] border-b-2 border-[#131319] font-sans duration-75 backdrop-blur-sm">
+        <div id="hide-header" style={{ position: 'fixed', width: '100%', zIndex: '100' }} className={`text-[0.95rem] p-2 border-b-2 border-[#131319] font-sans duration-75 backdrop-blur-sm bg-greenhero`}>
             <div className="flex justify-between ml-10 mr-2">
                 <div className="basis-1/6 flex gap-x-2 my-auto mr-2">
                     <img src={logo} alt="logo" className="w-9 h-9 my-auto invert-[100%]" />
