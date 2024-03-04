@@ -6,10 +6,12 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className='bg-[#000000] h-[3000px]'>
+    <div className='bg-[#000000]'>
       <Header />
-      <MainComponent />
-      <Footer />
+      <div className="w-11/12 mx-auto">
+        <MainComponent />
+        <Footer />
+      </div>
     </div>
   );
 }
