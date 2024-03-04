@@ -27,11 +27,11 @@ const Header = () => {
   }, [prevScrollpos]);
 
   return (
-    <div id="hide-header" style={{ position: 'fixed', width: '100%', zIndex: '100' }} className={`text-[0.95rem] p-2  font-sans backdrop-blur-sm bg-[#00000000] duration-150`}>
+    <div id="hide-header" style={{ position: 'fixed', width: '100%', zIndex: '100' }} className={`text-[0.95rem] p-2  font-sans backdrop-blur-sm bg-[#000000]/40 duration-150`}>
       <div className="flex justify-between ml-10 mr-2">
         <div className="basis-1/6 flex gap-x-2 my-auto mr-2">
           <img src={logo} alt="logo" className="w-9 h-9 my-auto invert-[100%]" />
-          <div className="my-auto font-mono text-[1.123rem] mr-1">ShareSpace</div>
+          <div className="my-auto font-mono text-[1.123rem] mr-1 text-white">ShareSpace</div>
         </div>
         <div className="flex w-full my-auto">
           <div className="flex gap-x-10 text-[#d6d6d6]">

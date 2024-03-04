@@ -8,10 +8,10 @@ function App() {
   return (
     <div className='bg-[#000000]'>
       <Header />
-      <div className="w-11/12 mx-auto">
+      <div className="mx-auto">
         <MainComponent />
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }
